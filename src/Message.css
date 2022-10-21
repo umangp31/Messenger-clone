@@ -1,0 +1,18 @@
+.content{
+    color: black;
+}
+
+.message{
+    /* box-sizing: border-box; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: black !important;
+}
+
+.message_user{
+    background-color: dodgerblue !important;
+    margin-left: auto;
+    text-align: left;
+    color: white !important;
+}
