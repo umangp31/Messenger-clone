@@ -39,7 +39,8 @@ function App() {
     <div className="App">
       <nav className="app_nav">
         <img src="./messenger.svg" alt="" width={"100px"} height="100px" />
-        <h2>Welcome {username}</h2>
+        <h1>Messenger-Clone</h1>
+        <h2>Welcome {username} 👋🏻</h2>
       </nav>
 
       <div className="app_formBox">
