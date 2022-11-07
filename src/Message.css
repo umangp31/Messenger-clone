@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     color: black !important;
+    max-width: 70vw;
 }
 
 .message_user{
@@ -15,6 +16,7 @@
     margin-left: auto;
     text-align: left;
     color: white !important;
+    max-width: 70vw;
 }
 
 .box{

@@ -1,8 +1,15 @@
 .App {
   /* text-align: center; */
+  justify-content: center;
 
 }
 
+.app_nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .app_form{
   display: flex !important;
   justify-content: center !important;
@@ -14,6 +21,10 @@
   flex-direction: column;
   background: #e9e9eb;
   width: 80vw;
+}
+
+.app_move{
+  /* max-width: 50vw; */
 }
 
 .app_formcontrol{

@@ -37,15 +37,18 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <img src="./messenger.svg" alt="" width={"100px"} height="100px" />
-      <h1>Hello World</h1>
-      <h2>Welcome {username}</h2>
+      <nav className="app_nav">
+        <img src="./messenger.svg" alt="" width={"100px"} height="100px" />
+        <h2>Welcome {username}</h2>
+      </nav>
 
       <form className="app_form" action="">
         <FormControl className="app_formcontrol">
-          <Input className="app_input" placeholder="Enter a message"
+          <Input
+            className="app_input"
+            placeholder="Enter a message"
             value={input}
-            onChange={(event) => setInput(event.target.value)} 
+            onChange={(event) => setInput(event.target.value)}
           />
           <IconButton
             className="app_iconButton"
@@ -55,11 +58,11 @@ function App() {
             type="submit"
             onClick={sendMessage}
           >
-            <SendIcon/>
+            <SendIcon />
           </IconButton>
         </FormControl>
       </form>
-      <FlipMove>
+      <FlipMove className="app_move">
         {messages.map(({ id, message }) => (
           <Message key={id} username={username} messages={message} />
         ))}
